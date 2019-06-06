@@ -1,0 +1,22 @@
+title FullStack 2019 0.4
+
+Selain-->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/
+
+Palvelin-->Selain: Sivun uudelleen lataus
+Selain-->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+
+// Ladataan tyylitiedosto.
+
+Palvelin-->Selain: main.css
+
+Selain-->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+
+//Ladataan Javatiedosto.
+
+Palvelin-->Selain: main.js
+
+// Samalla pyydetään JSON raakadata. 
+
+Selain-->Palvelin:  HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+
+Palvelin-->Selain: Näytetään selaimelle uudet muistiinpanot.
